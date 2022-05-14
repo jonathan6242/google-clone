@@ -1,0 +1,143 @@
+.searchpage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.searchpage__header {
+  padding: 24px;
+  padding-bottom: 16px;
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.searchpage__logo {
+  height: 50px;
+}
+
+.searchpage__logo--wrapper {
+  margin-right: 24px;
+}
+
+.searchpage__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: unset;
+  max-width: unset;
+}
+
+.searchpage__main--top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchpage__main--top .input__container {
+  margin: unset;
+  width: 50vw;
+  min-width: 560px;
+  margin-right: 200px;
+}
+
+.searchpage__main--options {
+  display: flex;
+  align-items: center;
+}
+
+.fa-gear {
+  font-size: 20px;
+}
+
+.searchpage__main--bottom {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.searchpage__option {
+  cursor: not-allowed;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px;
+}
+
+.searchpage__option span {
+  margin-left: 6px;
+}
+
+.searchpage__option,
+.searchpage__option i {
+  color: #777;
+}
+
+.searchpage__results {
+  padding: 12px 0px 0px 160px;
+  flex: 1;
+}
+
+.searchpage__results--stats {
+  color: #999;
+}
+
+.searchpage__result {
+  margin: 24px 0;
+  max-width: 600px;
+}
+
+.searchpage__result--url {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.searchpage__result--title {
+  font-size: 20px;
+  color: #1a0dab;
+  cursor: pointer;
+}
+
+.searchpage__result--title:hover {
+  text-decoration: underline;
+}
+
+.searchpage__result--snippet {
+  font-size: 14px;
+  margin-top: 6px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* SKELETON LOADING STATE */
+
+.skeleton__stats {
+  height: 21px;
+  width: 400px;
+  background-color: #f4f4f4;
+}
+
+.skeleton__url {
+  height: 18px;
+  background-color: #f4f4f4;
+  width: 150px;
+  margin-bottom: 6px;
+}
+
+.skeleton__title {
+  height: 27px;
+  background-color: #f4f4f4;
+  width: 200px;
+}
+
+.skeleton__snippet {
+  height: 32px;
+  background-color: #f4f4f4;
+  width: 600px;
+  margin-top: 6px;
+}
